@@ -13,9 +13,9 @@ public class ReviewRepository {
 	
 	public ReviewRepository() {
 		
-		Review chocolateChip = new Review(1L, "ImageURL", "Chocolate Chip Cookies", "Description", "WebsiteUrl");
-		Review peanutButter = new Review(2L, "ImageURL", "Peanut Butter Cookies", "Description", "WebsiteUrl");
-		Review butter = new Review(3L, "ImageURL", "Butter Cookies", "Description", "WebsiteUrl");
+		Review chocolateChip = new Review(1L, "Chocolate Chip Cookies", "Description");
+		Review peanutButter = new Review(2L, "Peanut Butter Cookies", "Description");
+		Review butter = new Review(3L, "Butter Cookies", "Description");
 		
 		reviewList.put(chocolateChip.getReviewId(), chocolateChip);
 		reviewList.put(peanutButter.getReviewId(), peanutButter);
@@ -37,5 +37,4 @@ public class ReviewRepository {
 
 		return reviewList.values();
 	}
-
 }

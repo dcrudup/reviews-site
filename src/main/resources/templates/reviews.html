@@ -1,23 +1,21 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
 <head>
-	<title>Reviews</title>
+<title>Reviews</title>
 </head>
 
 <body>
-
-	<h1>A List of Reviews</h1>
+	<header>
+		<h1>A List of Reviews</h1>
+	</header>
 	
-	
-	<h1>A List of Courses</h1>
-
-	<!-- <div th:each="review: ${reviews}">
-
-		<a th:href="@{/review(id=${review.id})}" th:text="${review.name}"></a>
-
-	</div> -->
-
-
+	<div th:each="review: ${reviews}">
+		<h2>
+			<a th:href="@{/review(id=${review.reviewId})}" th:text="${review.name}"></a>
+		</h2>
+	</div>
 
 
 </body>
