@@ -2,24 +2,24 @@ package org.wecancodeit.reviewssite;
 
 public class Review {
 
-	private long reviewId;
+	private long id;
 	private String name;
 	private String description;
 
-	public long getReviewId() {
-		return reviewId;
+	public long getId() {
+		return id;
 	}
 
 	public String getName() {
-		return "name";
+		return name;
 	}
 
 	public String getDescription() {
-		return "description";
+		return description;
 	}
 
-	public Review(long reviewId, String name, String description) {
-		this.reviewId = reviewId;
+	public Review(long id, String name, String description) {
+		this.id = id;
 		this.name = name;
 		this.description = description;
 		

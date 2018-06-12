@@ -12,10 +12,14 @@
 	</header>
 	
 	<div th:each="review: ${reviews}">
-		<h2>
-			<a th:href="@{/review(id=${review.reviewId})}" th:text="${review.name}"></a>
-		</h2>
+	
+	<li>
+	<a th:href="@{/review(id=${review.id})}" th:text="${review.name}"></a>
+	</li>
+	
+	
 	</div>
+		
 
 
 </body>

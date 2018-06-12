@@ -17,20 +17,20 @@ public class ReviewRepository {
 		Review peanutButter = new Review(2L, "Peanut Butter Cookies", "Description");
 		Review butter = new Review(3L, "Butter Cookies", "Description");
 		
-		reviewList.put(chocolateChip.getReviewId(), chocolateChip);
-		reviewList.put(peanutButter.getReviewId(), peanutButter);
-		reviewList.put(butter.getReviewId(), butter);
+		reviewList.put(chocolateChip.getId(), chocolateChip);
+		reviewList.put(peanutButter.getId(), peanutButter);
+		reviewList.put(butter.getId(), butter);
 	}
 	
 	//constructor for testing purposes
 	public ReviewRepository(Review... reviews) {
 		for (Review review : reviews) {
-			reviewList.put(review.getReviewId(), review);
+			reviewList.put(review.getId(), review);
 		}
 	}
 
-	public Review findOne(long reviewId) {
-		return reviewList.get(reviewId);
+	public Review findOne(long id) {
+		return reviewList.get(id);
 	}
 
 	public Collection<Review> findAll() {
