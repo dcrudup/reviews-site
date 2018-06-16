@@ -10,7 +10,6 @@ public class Review {
 	public long getId() {
 		return id;
 	}
-	
 
 	public String getName() {
 		return name;
@@ -19,7 +18,7 @@ public class Review {
 	public String getDescription() {
 		return description;
 	}
-	
+
 	public String getImage() {
 		return image;
 	}
@@ -29,7 +28,7 @@ public class Review {
 		this.image = image;
 		this.name = name;
 		this.description = description;
-		
+
 	}
 
 }

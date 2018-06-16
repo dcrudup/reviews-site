@@ -18,10 +18,12 @@ public class ReviewRepository {
 				"/images/chocolate-chip-cookies.jpg");
 
 		Review peanutButter = new Review(2L, "Peanut Butter Cookies",
-				"These cookies are TOO DIE FOR GOOD! They're soft, decadent, and delicious.", "/images/peanut-butter-cookies.jpg");
+				"These cookies are TOO DIE FOR GOOD! They're soft, decadent, and delicious.",
+				"/images/peanut-butter-cookies.jpg");
 
 		Review spritz = new Review(3L, "Spritz Cookies",
-				"These are the best spritz cookies!!! They are light and crispy with a rich, buttery taste.", "/images/spritz-cookies.jpg");
+				"These are the best spritz cookies!!! They are light and crispy with a rich, buttery taste.",
+				"/images/spritz-cookies.jpg");
 
 		reviewList.put(chocolateChip.getId(), chocolateChip);
 		reviewList.put(peanutButter.getId(), peanutButter);
